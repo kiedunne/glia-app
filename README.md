@@ -1,24 +1,28 @@
-# README
+# Glia
+*Cells that form a supporting network for the neurons in the brain, comes from the Greek word for glue.*
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Track your clients' appointments and progress in one dashboard.
 
-Things you may want to cover:
 
-* Ruby version
+## Installation
 
-* System dependencies
+```
+git clone https://github.com/kiedunne/glia-app.git
+cd glia-app
+bundle install
+rails server
+```
 
-* Configuration
+## Technology
 
-* Database creation
+#### Back-end 
 
-* Database initialization
+* Rails
+* Rspec
+* Capybara
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Front-end 
+* React
+* Vus
+* Jest
+* Cypress
