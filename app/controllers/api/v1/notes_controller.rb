@@ -1,7 +1,7 @@
-class NotesController < ApplicationController
+class Api::V1::NotesController < ApplicationController
 
     def index
-        
+      render json:Note.all  
     end 
     
     def new
@@ -16,6 +16,16 @@ class NotesController < ApplicationController
             render 'new'
         end 
     end 
+
+    def destroy
+        Note.destroy(params[:id])
+      end
+    
+      def update
+        @note = Note.find(params[:id])
+        @note.update_attributes(note_params)
+        render json: note
+      end
 
     private
 
