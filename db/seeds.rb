@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 notes = ['note 1', 'note 2', 'note 3']
-notes.each{|note| Note.create(title: note, body: 'note body', date: '02/03/2019')}
+notes.each{|note| Note.create(title: note, description: 'note description', date: '02/03/2019')}
