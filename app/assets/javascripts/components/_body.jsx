@@ -29,7 +29,7 @@ class Body extends React.Component {
     
       addNewNote(note){
         this.setState({
-          fruits: this.state.notes.concat(note)
+          notes: this.state.notes.concat(note)
         })
       }
 

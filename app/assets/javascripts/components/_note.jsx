@@ -35,8 +35,8 @@ class Note extends React.Component {
             <div className="all-notes">
                 {title}
                 {description}
-                <button onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
-                <button onClick={() => this.props.handleDelete(this.props.note.id)}>Delete</button>
+                <button className= "btn btn-info m-2" onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
+                <button className= "btn btn-danger m-2" onClick={() => this.props.handleDelete(this.props.note.id)}>Delete</button>
             </div>
         )
     }
