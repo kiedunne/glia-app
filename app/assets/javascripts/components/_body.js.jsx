@@ -1,15 +1,16 @@
+
 class Body extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {
-        notes: []
-      };
-      this.handleFormSubmit = this.handleFormSubmit.bind(this)
-      this.addNewNote = this.addNewNote.bind(this)
-      this.handleDelete = this.handleDelete.bind(this)
-      this.deleteNote = this.deleteNote.bind(this)
-      this.handleUpdate = this.handleUpdate.bind(this);
-      this.updateNote = this.updateNote.bind(this)
+        this.state = {
+          notes: []
+        };
+        this.handleFormSubmit = this.handleFormSubmit.bind(this)
+        this.addNewNote = this.addNewNote.bind(this)
+        this.handleDelete = this.handleDelete.bind(this)
+        this.deleteNote = this.deleteNote.bind(this)
+        this.handleUpdate = this.handleUpdate.bind(this);
+        this.updateNote = this.updateNote.bind(this)
     }
 
     handleFormSubmit(title, description){
@@ -24,6 +25,8 @@ class Body extends React.Component {
         }).then((response) => {return response.json()})
         .then((note)=>{
           this.addNewNote(note)
+          
+          console.log(note.id);
         })
       }
     

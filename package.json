@@ -2,7 +2,8 @@
   "name": "therapy",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "react-html-id": "^0.1.5"
   },
   "devDependencies": {
     "jquery": "^3.3.1",
